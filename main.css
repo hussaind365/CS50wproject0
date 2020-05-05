@@ -1,0 +1,235 @@
+.Menufixed{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 999;
+}
+.logo a{
+    font-size: 41px;
+    
+    letter-spacing: 2px;
+}
+.logo span{
+    
+    margin-left: 4px;
+    padding: 0 3px 4px 4px;
+    text-transform: capitalize;
+}
+
+.main {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.main {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "lead lead" "left right" "footer footer";
+}
+
+@media only screen and (max-width: 600px), screen and (device-width: 360px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "lead" "left" "right" "footer";
+  }
+  
+}
+
+.header {
+  grid-area: title;
+}
+.header-right {
+  float: right;
+}
+
+
+ 
+ .textcolor{
+  color: white;
+ }
+
+ /* Style the navigation menu */
+.navbar1 {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  height: 60px;
+
+}
+
+/* Navigation links */
+.navbar1 a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar1 a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar1 a.active {
+  background-color: #4CAF50;
+}
+
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar1 a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.navbar-brand{
+  font-size: large !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #bec2be;
+}
+body {
+  background-color: #F5F5F5;
+  color: black;
+  font-size: 18px;
+}
+
+#fh{
+
+  text-align: center;
+  color: #1E90FF;
+}
+ h1 {
+  color: green;
+}
+h2 {
+
+  text-align: center;
+}
+
+img{
+
+  border-radius: 50%;
+}
+
+.lead {
+  grid-area: lead;
+}
+
+.status, .requirements {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid darkgrey;
+}
+
+.requirements {
+  grid-area: left;
+}
+
+.status {
+  grid-area: right;
+}
+
+.footerbar { 
+    position:absolute;
+  display:table-row;
+  
+  background: black;
+  color: white;
+  width: 100%;
+  height:100px;
+  text-align: center;
+}
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+ 
+}
+.container{
+  
+  object-position: center;
+  border: dotted;
+}
+.box {
+    width:300px;
+    height:300px;
+    background-color:#d9d9d9;
+    position:fixed;
+    margin-left:-150px; /* half of width */
+    margin-top:-150px;  /* half of height */
+    top:50%;
+    left:50%;
+}
+
+#mytable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#mytable td, #mytable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#mytable tr:nth-child(even){background-color: #f2f2f2;}
+
+#mytable tr:hover {background-color: #ddd;}
+
+#mytable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #33bbff;
+  color: white;
+}
+
+#image_container {
+  width: 100%;
+  height: 100%;
+}
+
+#edx_logo {
+  display: block;
+  margin: auto;
+}
+
+/*# sourceMappingURL=main.css.map */
